@@ -44,12 +44,18 @@
     <ClCompile Include="Client.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="ConversationDialog.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <QtMoc Include="NameAccepter.h">
       <Filter>Header Files</Filter>
     </QtMoc>
     <QtMoc Include="Client.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="ConversationDialog.h">
       <Filter>Header Files</Filter>
     </QtMoc>
   </ItemGroup>
@@ -59,6 +65,9 @@
     </QtUic>
     <QtUic Include="NameAccepter.ui">
       <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="ConversationDialog.ui">
+      <Filter>Source Files</Filter>
     </QtUic>
   </ItemGroup>
 </Project>

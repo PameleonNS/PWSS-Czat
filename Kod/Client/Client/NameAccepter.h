@@ -21,5 +21,5 @@ signals:
 	void SendExit();
 
 private:
-	Ui::Dialog ui;
+	Ui::NameAccepterDialog ui;
 };

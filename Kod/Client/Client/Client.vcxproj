@@ -119,8 +119,10 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Client.cpp" />
+    <ClCompile Include="ConversationDialog.cpp" />
     <ClCompile Include="NameAccepter.cpp" />
     <QtRcc Include="MainWindow.qrc" />
+    <QtUic Include="ConversationDialog.ui" />
     <QtUic Include="MainWindow.ui" />
     <QtMoc Include="MainWindow.h" />
     <ClCompile Include="MainWindow.cpp">
@@ -139,6 +141,9 @@
   </ItemGroup>
   <ItemGroup>
     <QtMoc Include="Client.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="ConversationDialog.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Condition="Exists('$(QtMsBuild)\qt.targets')">
