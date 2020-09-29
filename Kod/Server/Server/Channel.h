@@ -17,7 +17,8 @@ public:
 	void AddHosts(Host *host);
 	void AddMessageToConversation(QString name, QString message);
 	QVector<QString>& GetMessages();
-	bool CheckHost(QTcpSocket *socket);
+	bool CheckHost(QTcpSocket *socket, QTcpSocket *socket_2);
+	bool CheckHost(QTcpSocket *socket, int id);
 	QTcpSocket* GetReceiver(QTcpSocket *sender);
 	int GetId() 
 	{

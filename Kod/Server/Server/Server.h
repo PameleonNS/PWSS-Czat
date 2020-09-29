@@ -4,12 +4,11 @@
 #include <qlist.h>
 #include "Channel.h"
 
-const int NAME_SEND = 150;
-const int MESSAGE_SEND = 151;
-const int ID_SEND = 152;
-const int CONNECTED_HOSTS = 153;
-const int PENDING_MSG = 154;
-const int CONFIRM = 180;
+const int NAME_SEND = 150;			//pakiet wysyłany przez klienta do serwera (nazwa)
+const int MESSAGE_SEND = 151;		//przekazywanie wiadomości pomiędzy klientami
+const int ID_SEND = 152;			//rozgłoszenie informacji o nowym kliencie dla już podłączonych
+const int CONNECTED_HOSTS = 153;	//wysłanie nowemy klientowi informacji o innych podłączonych klientach
+const int REMOVE_HOST = 254;		//rozgłoszenie informacji o rozłączeniu klienta
 
 template<class type>
 struct Message {
