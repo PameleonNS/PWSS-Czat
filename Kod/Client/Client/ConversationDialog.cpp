@@ -12,26 +12,24 @@ ConversationDialog::~ConversationDialog()
 {
 }
 
-void ConversationDialog::GetData(QString data) //Wyświetlenie daty
+void ConversationDialog::SetData(QString data) //Wyświetlenie daty
 {
 	QDateTime time;
 	QString date = time.currentDateTime().toString();
 	ui.incomingEdit->append("<" + date + ">" + QString(data));
 }
 
-void ConversationDialog::OnSendButtonClick() 
+void ConversationDialog::OnSendButtonClick()
 {
 	QDateTime time;
 	QString date = time.currentDateTime().toString();
 	QString message = ui.outcomingEdit->toPlainText();
 	ui.outcomingEdit->clear();
 	ui.incomingEdit->append(QString("<"+date+">You: " + message));
-	emit PassDataToSend(message);
+	emit PassDataToSend(message, conversationId);
 }
 
 void ConversationDialog::reject()
 {
-	ui.incomingEdit->clear();
-	ui.outcomingEdit->clear();
 	QDialog::reject();
 }
